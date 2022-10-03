@@ -16,27 +16,35 @@
 
 <body>
 	<header>
-		<div class="container main-nav">
-			<nav class="nav-bar">
-				<a href="" class="logo"><span class="highlight-text">Web</span>Studio</a>
-				<ul class="nav-links list choosen">
-					<li class="nav-link navigation"><a href="./index.html">Студія</a></li>
-					<li class="nav-link navigation"><a href="" class="active">Портфоліо</a></li>
-					<li class="nav-link navigation"><a href="">Контакти</a></li>
+		<div class="container container--centered">
+			<nav class="nav">
+				<a href="" class="logo">
+					<span class="logo__highlight">Web</span>Studio
+				</a>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="./index.html">Студія</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--active" href="">Портфоліо</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="">Контакти</a>
+					</li>
 				</ul>
 			</nav>
-			<ul class="nav-links nav-contacts list">
-				<li class="nav-link">
-					<a href="mailto:info@devstudio.com">
-						<svg class="icon-nav" width="16px" height="12px">
+			<ul class="nav__list nav__list--right">
+				<li class="nav__item">
+					<a class="nav-contacts" href="mailto:info@devstudio.com">
+						<svg class="nav__icon" width="16px" height="12px">
 							<use href="./images/symbol-defs.svg#icon-envelope"></use>
 						</svg>
 						<span>info@devstudio.com</span>
 					</a>
 				</li>
-				<li class="nav-link">
-					<a href="tel:+380961111111">
-						<svg class="icon-nav" width="10px" height="16px">
+				<li class="nav__item">
+					<a class="nav-contacts" href="tel:+380961111111">
+						<svg class="nav__icon" width="10px" height="16px">
 							<use href="./images/symbol-defs.svg#icon-phone"></use>
 						</svg>
 						<span>+38 096 111 11 11</span>
@@ -49,14 +57,14 @@
 		<section class="gallery section">
 			<div class="container">
 				<h1 class="visually-hidden">Галерея наших робіт</h1>
-				<ul class="gallery-buttons list">
+				<ul class="gallery-buttons">
 					<li class="gallery-button"><button class="gallery-text" type="button">Усі</button></li>
 					<li class="gallery-button"><button class="gallery-text" type="button">Веб-сайти</button></li>
 					<li class="gallery-button"><button class="gallery-text" type="button">Додатки</button></li>
 					<li class="gallery-button"><button class="gallery-text" type="button">Дизайн</button></li>
 					<li class="gallery-button"><button class="gallery-text" type="button">Маркетинг</button></li>
 				</ul>
-				<ul class="projects list">
+				<ul class="projects">
 					<li class="projects-card">
 						<a href="">
 
@@ -177,10 +185,10 @@
 	<footer>
 		<div class="container footer-container">
 			<div class="footer-info">
-				<a href="" class="logo logo-footer"><span class="highlight-text">Web</span>Studio</a>
+				<a href="" class="logo logo-footer"><span class="logo__highlight">Web</span>Studio</a>
 				<address>
 					<p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
-					<ul class="footer-contacts list">
+					<ul class="footer-contacts">
 						<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
 						<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
 					</ul>
