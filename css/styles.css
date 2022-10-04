@@ -219,7 +219,6 @@ address {
 	padding-right: 32px;
 }
 
-
 .backdrop {
 	position: fixed;
 	width: 100%;
@@ -253,7 +252,7 @@ address {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.close-button {
+.modal__close-button {
 	position: absolute;
 	right: 8px;
 	top: 8px;
@@ -269,8 +268,8 @@ address {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:hover,
-.close-button:focus {
+.modal__close-button:hover,
+.modal__close-button:focus {
 	fill: var(--highlighted-color);
 }
 
@@ -278,7 +277,7 @@ address {
 	padding: 40px;
 }
 
-.modal-form p {
+.modal-form__title {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 1.15;
@@ -288,18 +287,18 @@ address {
 	margin-bottom: 12px;
 }
 
-.form-field {
+.modal-form__field {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
 }
 
-.form-field:nth-child(-n + 3) {
+.modal-form__field:nth-child(-n + 3) {
 	margin-bottom: 10px;
 }
 
-.field-desc {
+.modal-form__label {
 	display: block;
 	font-size: 12px;
 	line-height: 1.17;
@@ -308,7 +307,7 @@ address {
 	margin-bottom: 4px;
 }
 
-.field-input {
+.modal-form__input {
 	width: 100%;
 	height: 40px;
 	padding: 14px 42px;
@@ -317,24 +316,24 @@ address {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:focus-within .field-input,
-.form-field:focus-within textarea {
+.modal-form__field:focus-within .modal-form__input,
+.modal-form__comment:focus-within {
 	border-color: var(--highlighted-color);
 	outline: none;
 }
 
-.field-icon {
+.modal-form__icon {
 	position: absolute;
 	top: 50%;
 	left: 12px;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:focus-within .field-icon {
+.modal-form__field:focus-within .modal-form__icon {
 	fill: #2196F3;
 }
 
-.form-field textarea {
+.modal-form__comment {
 	width: 100%;
 	height: 120px;
 	resize: none;
@@ -344,7 +343,7 @@ address {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field textarea::placeholder {
+.modal-form__field::placeholder {
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.01em;
@@ -365,16 +364,16 @@ address {
 	user-select: none;
 }
 
-.policy .policy-agreement {
+.policy .policy__agreement {
 	margin-left: 8.38px;
 }
 
-.policy a {
+.policy__agreement-link {
 	text-decoration: underline;
 	color: var(--highlighted-color);
 }
 
-.checkbox {
+.policy__checkbox {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -388,7 +387,7 @@ address {
 	overflow: hidden;
 }
 
-.checkbox-icon-unchecked {
+.policy__checkbox--unchecked {
 	display: inline-block;
 	width: 16px;
 	height: 15px;
@@ -397,7 +396,7 @@ address {
 	cursor: pointer;
 }
 
-.checkbox-icon-checked {
+.policy__checkbox--checked {
 	position: absolute;
 	left: 0;
 	cursor: pointer;
@@ -405,22 +404,17 @@ address {
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked~.checkbox-icon-checked {
+.policy__checkbox:checked~.policy__checkbox--checked {
 	opacity: 1;
 }
 
-.close-form-button {
+.modal-button--close {
 	padding-left: 52px;
 	padding-right: 52px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button-cover {
-	display: flex;
-	justify-content: center;
-}
-
-.callback_form button {
+.modal-button {
 	display: flex;
 	justify-content: center;
 }
@@ -474,7 +468,6 @@ address {
 .preferences__header--margin {
 	margin-bottom: 10px;
 }
-
 
 /* Works block */
 
@@ -647,6 +640,7 @@ ___________________ */
 .footer__logo {
 	display: inline-block;
 	margin-bottom: 20px;
+	color: var(--white-color);
 }
 
 /* _______________
